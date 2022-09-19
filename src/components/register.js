@@ -5,10 +5,22 @@ import { Navigate, useParams } from "react-router-dom";
 
 export default function Student(props) { 
 return (
+    let register = (event) => {
+  console.log("delete");
+    event.preventDefault();
+
+        axios.post("http://localhost:8080/register", patient)
+        .then((response) => {
+          if (response.data != null) {
+            props.showAlert("success", "Record added successfully");
+          }
+        })
+        .catch((error) => props.showAlert("danger", "Error"));
+  };
     <div className="my-3">
       <Container>
         <Card>
-          <Form onSubmit={patientIds != null ? updateStudent : savePatient}>
+          <Form onSubmit={patientIds != null ? register}>
             <Card.Header>
               <strong>{patientIds!=null? "Update Student Information":"Add Student Information"}</strong>
             </Card.Header>
