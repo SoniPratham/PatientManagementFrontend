@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 export default function NavigationBar() {
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="#000000" variant="dark">
       <Container>
         <Link to="/" className='navbar-brand'>Patient Management System</Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
