@@ -58,7 +58,7 @@ return (
             </Card.Body>
             <Card.Footer>
               <Button variant="primary" type="submit">
-                {patientIds != null ? "Update" : "Submit"}
+                {patientIds != null ? "Register"}
               </Button>
             </Card.Footer>
           </Form>
