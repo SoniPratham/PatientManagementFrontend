@@ -43,6 +43,10 @@ export default function StudentList(props) {
                 <th>Edit/Delete</th>
               </tr>
             </thead>
+            <th>patient Id</th>
+                <th>patient Name</th>
+                <th>patient Address</th>
+                <th>Edit/Delete</th>
             <tbody>
               {patient.length === 0 ? (
                 <tr>
